@@ -38,8 +38,6 @@ libnss3 \
     && 	echo "root:demo1234" | chpasswd \
 && wget --no-check-certificate https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
 && dpkg -i google-chrome-stable_current_amd64.deb \
-&& wget --no-check-certificate https://gitlab.com/jinselamet/uptime/-/raw/main/upwork_5.6.8.0_amd64.deb \
-&& dpkg -i upwork_5.6.8.0_amd64.deb \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
